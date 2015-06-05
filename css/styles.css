@@ -1,0 +1,65 @@
+
+body {
+  text-align: center;
+  background-image: url("images/pizza.jpg");
+  text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+
+.jumbotron {
+    text-align: center;
+    width: 1770px;
+    height: 150px;
+    background-image: url("images/wood.jpg");
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: black;
+}
+
+h1 {
+  color: yellow;
+    text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #FF0000, 0 4px 0 #FF0000,
+             0 5px 0 #FC0000, 0 6px 0 #C22525,
+             0 7px 0 #A01515, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+             font-family: "Lucida Console", Monaco, monospace;
+             text-decoration: overline;
+             text-transform: uppercase;
+             font-style: oblique;
+}
+
+.col-md-6 {
+  width: 1780px;
+}
+
+.container {
+  width: 1830px;
+}
+
+
+ .row {
+   width: 2300px;
+ }
+
+
+#left, #right {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    top: 0;
+}
+#left {
+    background-image: url("images/brick.jpg");
+    left: 0
+}
+#right {
+    background: black;
+    right: 0;
+    background-image: url("images/brick.jpg");
+}
+#container1 {
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    position: relative
+}

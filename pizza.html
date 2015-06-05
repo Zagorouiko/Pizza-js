@@ -8,14 +8,20 @@
     <title>Pizzaria</title>
   </head>
   <body>
+    <div id="left"></div>
+<div id="right"></div>
+<div id="container1"></div>
+    <div id="banner">
       <div class="container">
           <div class="jumbotron">
 
-      <h1>Pizzaria</h1>
+      <h1>The Pie Hole</h1>
 
         <p class="one">
         </p></div>
+        <h2>Order Here!</h2>
           <hr/>
+          <h4>Our delicious delicatessan pizzas start at $12</h4>
           <div class="row">
               <div class="col-md-6">
                   <form id="Pizza">
@@ -27,9 +33,9 @@
                       <div class="form-group">
                         <label for="topping">Toppings</label>
                         <select id="topping">
-                          <option value="cheese">cheese</option>
-                          <option value="sausage">sausage</option>
-                          <option value="pepperoni">pepperoni</option>
+                          <option value="cheese">cheese +$0.00</option>
+                          <option value="sausage">sausage +$1.50</option>
+                          <option value="pepperoni">pepperoni +$1.50</option>
                           <option value=></option>
                           <option value=></option>
                         </select>
@@ -38,9 +44,9 @@
                     <div class="form-group">
                       <label for="size">Size</label>
                       <select id="size">
-                        <option value="large">Large</option>
-                        <option value="medium">Medium</option>
-                        <option value=></option>
+                        <option value="large">Large +$3.00</option>
+                        <option value="medium">Medium +$2.00</option>
+                        <option value="small">small -$2.00</option>
                       </select>
                     </div>
                     <button type="submit" class="btn btn-info">Submit</button>
@@ -48,8 +54,8 @@
               </div>
           </div>
           <hr/>
-          <div class="cost">
-            <div class="row">
+          <div class="pizzaorder">
+            <div class="row2">
               <h3>Your Pizza total:</h3>
               <h1 class="pizzacost"></h1>
             </div>
