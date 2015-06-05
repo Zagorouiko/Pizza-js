@@ -24,5 +24,10 @@ describe("Pizza", function() {
      testPizza.size("large")
      expect(testPizza.cost).to.equal(15)
    });
+   it("gives a cost based on the size selected", function() {
+     var testPizza = Object.create(Pizza)
+     testPizza.size("medium")
+     expect(testPizza.cost).to.equal(14)
+  });
  });
 });
