@@ -14,11 +14,28 @@ var Pizza = {
     }
   },
 
-  size: function(size) {
+  pizzaSize: function(size) {
     if (size == "large") {
       this.cost = this.cost + 3;
     } else if (size == "medium") {
       this.cost = this.cost + 2;
     }
   }
-}
+};
+
+$(document).ready(function() {
+  var newPizza = Object.create(Pizza);
+
+  $("form#Pizza").submit(function(event) {
+    var inputtedQuantity = parseInt($("input#quantity").val());
+    var inputtedTopping = $("select#topping").val();
+    var inputtedSize = $("select#size").val();
+
+    newPizza.quantity(inputtedQuantity)
+    newPizza.topping(inputtedTopping)
+    newPizza.pizzaSize(inputtedSize)
+
+    $(".pizzacost").text(newPizza.cost);
+    event.preventDefault();
+  });
+});

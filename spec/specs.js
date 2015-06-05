@@ -21,12 +21,12 @@ describe("Pizza", function() {
  describe("size", function() {
    it("gives a cost based on the size selected", function() {
      var testPizza = Object.create(Pizza)
-     testPizza.size("large")
+     testPizza.pizzaSize("large")
      expect(testPizza.cost).to.equal(15)
    });
    it("gives a cost based on the size selected", function() {
      var testPizza = Object.create(Pizza)
-     testPizza.size("medium")
+     testPizza.pizzaSize("medium")
      expect(testPizza.cost).to.equal(14)
   });
  });
