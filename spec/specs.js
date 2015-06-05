@@ -12,5 +12,10 @@ describe("Pizza", function() {
       testPizza.topping("cheese")
       expect(testPizza.cost).to.equal(12)
     });
+    it("gives a cost based on the toppings selected", function() {
+      var testPizza = Object.create(Pizza)
+      testPizza.topping("sausage")
+      expect(testPizza.cost).to.equal(13.5)
   });
+ });
 });
