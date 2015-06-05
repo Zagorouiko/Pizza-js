@@ -8,13 +8,16 @@ var Pizza = {
   topping: function(toppings) {
     if (toppings == "cheese") {
       this.cost = this.cost + 0;
-      return this.cost
     } else if (toppings == "sausage") {
       this.cost = this.cost + 1.50;
-      return this.cost;
     } else if (toppings == "pepperoni") {
       this.cost = this.cost + 1.50;
-      return this.cost;
+    }
+  },
+
+  size: function(size) {
+    if (size == "large") {
+      this.cost = this.cost + 3;
     }
   }
 }
