@@ -10,7 +10,7 @@ describe("Pizza", function() {
     it("gives a cost based on the toppings selected", function() {
       var testPizza = Object.create(Pizza)
       testPizza.topping("cheese")
-      expect(testPizza.cost).to.equal(0)
-    })
-  })
+      expect(testPizza.cost).to.equal(12)
+    });
+  });
 });
