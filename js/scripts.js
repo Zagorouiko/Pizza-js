@@ -16,52 +16,33 @@ Pizza.prototype.topping = function(toppings) {
       }
 }
 
+Pizza.prototype.extraTopping = function(toppings) {
+  if (toppings == "cheese") {
+        this.cost += 0;
+      } else if (toppings == "sausage") {
+        this.cost += 1.50;
+      } else if (toppings == "pepperoni") {
+        this.cost += 1.50;
+      } else if (toppings == "pineapple") {
+        this.cost += .5;
+      } else if (toppings == "olives") {
+        this.cost += .5;
+      }
+}
 
-// var Pizza = {
-//   cost: 12,
-//
-//   topping: function(toppings) {
-//     if (toppings == "cheese") {
-//       this.cost += 0;
-//     } else if (toppings == "sausage") {
-//       this.cost += 1.50;
-//     } else if (toppings == "pepperoni") {
-//       this.cost += 1.50;
-//     } else if (toppings == "pineapple") {
-//       this.cost += .5;
-//     } else if (toppings == "olives") {
-//       this.cost += .5;
-//     }
-//   },
-//
-//   extraTopping: function(toppings) {
-//     if (toppings == "cheese") {
-//       this.cost += 0;
-//     } else if (toppings == "sausage") {
-//       this.cost += 1.50;
-//     } else if (toppings == "pepperoni") {
-//       this.cost += 1.50;
-//     } else if (toppings == "pineapple") {
-//       this.cost += .5;
-//     } else if (toppings == "olives") {
-//       this.cost += .5;
-//     }
-//   },
-//
-//   pizzaSize: function(size) {
-//     if (size == "extra large") {
-//       this.cost += 3;
-//     } else if (size == "large") {
-//       this.cost += 2;
-//     } else if (size == "medium") {
-//       this.cost;
-//     }
-//   },
-//
-//   quantity: function(amount) {
-//     this.cost *= amount;
-//   }
-// };
+Pizza.prototype.pizzaSize = function(size) {
+  if (size == "extra large") {
+        this.cost += 3;
+      } else if (size == "large") {
+        this.cost += 2;
+      } else if (size == "medium") {
+        this.cost;
+      }
+}
+
+Pizza.prototype.quantity = function(amount) {
+  this.cost *= amount;
+};
 
 $(document).ready(function() {
   var newPizza = Object.create(Pizza);
