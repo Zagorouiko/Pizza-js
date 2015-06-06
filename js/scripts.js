@@ -45,7 +45,7 @@ Pizza.prototype.quantity = function(amount) {
 };
 
 $(document).ready(function() {
-  var newPizza = Object.create(Pizza);
+  var newPizza = new Pizza();
   newPizza.cost = 0;
 
   $("form#Pizza").submit(function(event) {
